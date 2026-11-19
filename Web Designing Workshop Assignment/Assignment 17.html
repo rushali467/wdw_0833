@@ -8,20 +8,21 @@
 <body>
     <form action="#" method ="post">
 
-            <input type = "text" name="fullname" placeholder="Full Name" required="Please fill out this field">
+            <input type = "alphabets" name="fullname" title="Enter Full Name" placeholder="Full Name" required>
             <br><br>
 
-            <input type = "email" name="email" placeholder="you@college.edu" required="Please include an '@' in the email address">
+            <input type = "email" name="email" title="Please include an '@' in the email address" placeholder="you@college.edu" required>
             <br><br>
 
-            <input type = "digit" name="mobile" placeholder="10-digit mobile" required="Enter exactly 10 digits">
+            <input type = "tel" name="mobile" pattern="[0-9]{10}" maxlength="10" title="Enter exactly 10 digits" placeholder="10-digit mobile" required>
+            
             <br><br>
 
-            <input type = "password" name="password" placeholder="password" required="Minimum 6 characters">
+            <input type = "password" name="password" placeholder="password" minlength="6" maxlength="15" title="Enter Atleast 6 characters" required>
             <br><br>
 
             <input type="number" name="age" placeholder="Age (17-30)"
-            min="17" max="30" required>
+            min="17" max="30" title="Value must be less than or equal to 30" required>
             <br><br>
 
             <button type="submit">Register</button>
